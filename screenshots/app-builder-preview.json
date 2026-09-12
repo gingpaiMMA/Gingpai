@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "GINGPAI",
+      "hasCanvas": false,
+      "bodyTextLen": 3012,
+      "bodyTextHash": "be659fb0c5c5d53f16d8e945fcb4218c5246f159cf886d18c2a355f94e974944",
+      "bodyTextPrefix": "FRETE GRÁTIS ACIMA DE R$ 299 · 12× SEM JUROS · 5% OFF NO PIX GIN",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "GINGPAI",
+      "hasCanvas": false,
+      "bodyTextLen": 3028,
+      "bodyTextHash": "f794cfb65cad34fac5007fab6c216cd42b87be7762260797eeb5b87cf897c8c7",
+      "bodyTextPrefix": "FRETE GRÁTIS ACIMA DE R$ 299 · 12× SEM JUROS · 5% OFF NO PIX GIN",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

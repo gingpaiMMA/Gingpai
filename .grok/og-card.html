@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>GINGPAI</title>
+  <style>
+    @font-face {
+      font-family: "GP Narrow";
+      src: url("file:///usr/share/fonts/truetype/liberation/LiberationSansNarrow-Bold.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "GP Sans";
+      src: url("file:///usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 1200px;
+      height: 630px;
+      background: #090908;
+      overflow: hidden;
+    }
+    .card {
+      position: relative;
+      width: 1200px;
+      height: 630px;
+      background: #090908;
+      color: #f3efe6;
+      isolation: isolate;
+    }
+    .spot {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 58% 48% at 50% 44%, rgba(243, 239, 230, 0.18) 0%, rgba(243, 239, 230, 0.06) 34%, rgba(9, 9, 8, 0) 68%),
+        radial-gradient(ellipse 22% 16% at 50% 18%, rgba(196, 30, 58, 0.16) 0%, rgba(196, 30, 58, 0) 72%);
+    }
+    .floor {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 280px;
+      background: linear-gradient(to top, rgba(154, 149, 138, 0.10) 0%, rgba(9, 9, 8, 0) 100%);
+      clip-path: polygon(8% 100%, 92% 100%, 72% 0%, 28% 0%);
+      opacity: 0.85;
+    }
+    .scene {
+      position: absolute;
+      inset: 0;
+    }
+    .lockup {
+      position: absolute;
+      left: 50%;
+      top: 48%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 820px;
+    }
+    .star {
+      width: 28px;
+      height: 28px;
+      margin: 0 auto 22px;
+      display: block;
+    }
+    h1 {
+      margin: 0;
+      font-family: "GP Narrow", "Liberation Sans Narrow", sans-serif;
+      font-weight: 700;
+      font-size: 148px;
+      letter-spacing: 0.22em;
+      line-height: 0.92;
+      color: #f3efe6;
+      text-indent: 0.22em;
+      margin-right: -0.22em;
+      text-shadow: 0 10px 40px rgba(9, 9, 8, 0.55);
+    }
+    .rule {
+      width: 168px;
+      height: 3px;
+      background: #c41e3a;
+      margin: 22px auto 16px;
+    }
+    .tag {
+      font-family: "GP Sans", "Liberation Sans", sans-serif;
+      font-size: 15px;
+      letter-spacing: 0.42em;
+      text-indent: 0.42em;
+      color: #9a958a;
+      font-weight: 400;
+    }
+    .vignette {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse 78% 72% at 50% 46%, rgba(9, 9, 8, 0) 42%, rgba(9, 9, 8, 0.72) 100%),
+        linear-gradient(to bottom, rgba(9, 9, 8, 0.28) 0%, rgba(9, 9, 8, 0) 18%, rgba(9, 9, 8, 0) 78%, rgba(9, 9, 8, 0.5) 100%);
+    }
+    .grain {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.16;
+      mix-blend-mode: overlay;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 160px 160px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="spot"></div>
+    <div class="floor"></div>
+    <svg class="scene" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- left turnbuckle -->
+      <g>
+        <rect x="86" y="352" width="26" height="214" rx="3" fill="#1a1917"/>
+        <rect x="82" y="348" width="34" height="18" rx="2" fill="#c41e3a"/>
+        <rect x="82" y="546" width="34" height="22" rx="2" fill="#c41e3a"/>
+        <path d="M84 372 l30 18 M84 392 l30 18 M84 412 l30 18 M84 432 l30 18 M84 452 l30 18 M84 472 l30 18 M84 492 l30 18 M84 512 l30 18" stroke="#c41e3a" stroke-width="5" stroke-linecap="butt"/>
+      </g>
+      <!-- right turnbuckle -->
+      <g>
+        <rect x="1088" y="352" width="26" height="214" rx="3" fill="#1a1917"/>
+        <rect x="1084" y="348" width="34" height="18" rx="2" fill="#c41e3a"/>
+        <rect x="1084" y="546" width="34" height="22" rx="2" fill="#c41e3a"/>
+        <path d="M1086 372 l30 18 M1086 392 l30 18 M1086 412 l30 18 M1086 432 l30 18 M1086 452 l30 18 M1086 472 l30 18 M1086 492 l30 18 M1086 512 l30 18" stroke="#c41e3a" stroke-width="5"/>
+      </g>
+      <!-- ropes with slight sag -->
+      <path d="M112 392 C 400 408, 800 408, 1088 392" fill="none" stroke="#f3efe6" stroke-width="7" stroke-linecap="round"/>
+      <path d="M112 456 C 400 474, 800 474, 1088 456" fill="none" stroke="#f3efe6" stroke-width="7" stroke-linecap="round"/>
+      <path d="M112 520 C 400 538, 800 538, 1088 520" fill="none" stroke="#f3efe6" stroke-width="7" stroke-linecap="round"/>
+      <!-- crimson tape at left rope ends -->
+      <rect x="108" y="382" width="22" height="20" rx="2" fill="#c41e3a"/>
+      <rect x="108" y="446" width="22" height="20" rx="2" fill="#c41e3a"/>
+      <rect x="108" y="510" width="22" height="20" rx="2" fill="#c41e3a"/>
+      <rect x="1070" y="382" width="22" height="20" rx="2" fill="#c41e3a"/>
+      <rect x="1070" y="446" width="22" height="20" rx="2" fill="#c41e3a"/>
+      <rect x="1070" y="510" width="22" height="20" rx="2" fill="#c41e3a"/>
+      <!-- boxing gloves, empty-ring still life -->
+      <g transform="translate(792, 478)">
+        <g transform="rotate(-26 54 46)">
+          <ellipse cx="44" cy="36" rx="38" ry="30" fill="#7d786e"/>
+          <ellipse cx="64" cy="24" rx="16" ry="12" fill="#9a958a"/>
+          <rect x="52" y="48" width="42" height="26" rx="10" fill="#8a857b"/>
+          <rect x="54" y="56" width="38" height="7" fill="#c41e3a"/>
+        </g>
+        <g transform="translate(58, 10) rotate(18 54 46)">
+          <ellipse cx="44" cy="36" rx="38" ry="30" fill="#9a958a"/>
+          <ellipse cx="64" cy="22" rx="16" ry="12" fill="#b7b1a6"/>
+          <rect x="52" y="48" width="42" height="26" rx="10" fill="#9a958a"/>
+          <rect x="54" y="56" width="38" height="7" fill="#c41e3a"/>
+        </g>
+      </g>
+    </svg>
+    <div class="lockup">
+      <svg class="star" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <polygon fill="#f3efe6" points="16.00,2.20 18.67,11.12 26.65,11.34 20.33,16.21 22.58,23.86 16.00,19.35 9.42,23.86 11.67,16.21 5.35,11.34 13.33,11.12"/>
+      </svg>
+      <h1>GINGPAI</h1>
+      <div class="rule"></div>
+      <div class="tag">BOXING · MMA · MUAY THAI</div>
+    </div>
+    <div class="vignette"></div>
+    <div class="grain"></div>
+  </div>
+</body>
+</html>

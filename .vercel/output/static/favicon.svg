@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="GINGPAI">
+  <rect width="32" height="32" fill="#090908"/>
+  <polygon
+    fill="#f3efe6"
+    points="16.00,3.60 18.67,11.12 26.65,11.34 20.33,16.21 22.58,23.86 16.00,19.35 9.42,23.86 11.67,16.21 5.35,11.34 13.33,11.12"
+  />
+  <rect x="0" y="29" width="32" height="3" fill="#c41e3a"/>
+</svg>
